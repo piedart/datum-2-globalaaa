@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+service HelloWorld {
+  rpc Run(HelloWorldInputs) returns (HelloWorldOutputs);
+}
+
+message HelloWorldParams {}
+
+message HelloWorldInputs {}
+
+message HelloWorldOutputs {}
