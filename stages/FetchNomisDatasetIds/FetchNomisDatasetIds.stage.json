@@ -1,0 +1,8 @@
+{
+  "name": "FetchNomisDatasetIds",
+  "dependencies": {
+    "@torv-io/node-sdk": "^1.0.0",
+    "node-fetch": "^3.0.0"
+  },
+  "nodeVersion": ">=18.0.0"
+}
