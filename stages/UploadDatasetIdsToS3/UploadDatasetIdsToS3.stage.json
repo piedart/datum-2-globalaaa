@@ -1,0 +1,11 @@
+{
+  "name": "UploadDatasetIdsToS3",
+  "dependencies": {
+    "@torv-io/node-sdk": "^1.0.0",
+    "aws-sdk": "^2.1234.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  },
+  "nodeVersion": ">=18.0.0"
+}

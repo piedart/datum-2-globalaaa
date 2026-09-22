@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+message UploadDatasetIdsToS3Params {
+    string aws_access_key_id = 1;
+    string aws_secret_access_key = 2;
+    string s3_bucket_name = 3;
+    string s3_key_prefix = 4;
+}
+
+message UploadDatasetIdsToS3Inputs {
+    repeated string dataset_ids = 1;
+}
+
+message UploadDatasetIdsToS3Outputs {
+    bool success = 1;
+    string message = 2;
+}
+
+service UploadDatasetIdsToS3 {
+    rpc Run(UploadDatasetIdsToS3Inputs) returns (UploadDatasetIdsToS3Outputs);
+}
