@@ -1,7 +1,9 @@
 syntax = "proto3";
 
 message FetchNomisDatasetIdsParams {}
+
 message FetchNomisDatasetIdsInputs {}
+
 message FetchNomisDatasetIdsOutputs {
   repeated string dataset_ids = 1;
 }
