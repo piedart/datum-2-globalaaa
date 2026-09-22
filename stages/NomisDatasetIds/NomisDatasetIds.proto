@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service NomisDatasetIds {
+  rpc Run(NomisDatasetIdsInputs) returns (NomisDatasetIdsOutputs);
+}
+
+message NomisDatasetIdsParams {}
+
+message NomisDatasetIdsInputs {}
+
+message NomisDatasetIdsOutputs {
+  repeated string dataset_ids = 1;
+}
