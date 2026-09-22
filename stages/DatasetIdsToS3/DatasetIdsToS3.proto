@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+message DatasetIdsToS3Params {
+  string aws_access_key_id = 1;
+  string aws_secret_access_key = 2;
+  string s3_bucket_name = 3;
+  string file_name = 4;
+}
+
+message DatasetIdsToS3Inputs {
+  repeated string dataset_ids = 1;
+}
+
+message DatasetIdsToS3Outputs {
+  bool success = 1;
+  string message = 2;
+}
+
+service DatasetIdsToS3 {
+  rpc Run(DatasetIdsToS3Inputs) returns (DatasetIdsToS3Outputs);
+}
