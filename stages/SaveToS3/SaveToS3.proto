@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+message SaveToS3Params {
+  string s3_bucket_name = 1;
+}
+
+message SaveToS3Inputs {
+  repeated string dataset_ids = 1;
+}
+
+message SaveToS3Outputs {
+  string message = 1;
+}
+
+service SaveToS3 {
+  rpc Run(SaveToS3Inputs) returns (SaveToS3Outputs);
+}

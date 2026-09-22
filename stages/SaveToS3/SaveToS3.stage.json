@@ -1,0 +1,11 @@
+{
+  "name": "SaveToS3",
+  "dependencies": {
+    "@torv-io/node-sdk": "^1.0.0",
+    "@aws-sdk/client-s3": "^3.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.x"
+  },
+  "nodeVersion": ">=18.0.0"
+}
